@@ -1,0 +1,43 @@
+{
+    "manifest_version": 3,
+    "name": "Zodiac sign for today",
+    "description": "This is zodiac sign implementation for today",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://www.google.com/*"
+            ],
+            "js": [
+                "/jquery.min.js",
+                "/jquery-ui.min.js"
+            ],
+            "css": [
+                "/jquery-ui.css"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "/images/zodiac_rounded_48.png",
+        "128": "/images/zodiac_rounded_128.png"
+    },
+    "action": {
+        "default_icon": {
+            "48": "/images/zodiac_rounded_48.png",
+            "128": "/images/zodiac_rounded_128.png"
+        },
+        "default_popup": "/zodiac-subscribe/zodiac-subscribe.html"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' 'https://apis.google.com/' 'https://www.gstatic.com/' 'https://*.firebaseio.com' 'https://www.googleapis.com' 'https://ajax.googleapis.com' 'https://cdnjs.cloudflare.com'; object-src 'self'"
+    }
+}

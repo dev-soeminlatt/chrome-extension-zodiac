@@ -1,0 +1,109 @@
+body {
+    min-width: 420px;
+    min-height: 300px;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body::after {
+    content: "";
+    background: url("/images/zodiac.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#page {
+    padding: 0px 20px;
+}
+
+div {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#description-header,
+#compatibility-header,
+#color-header,
+#mood-header,
+#lucky-number-header,
+#lucky-time-header {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+#date-range-zodiac-header {
+    color: #736AFF;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#description {
+    color: #A52A2A;
+}
+
+#compatibility {
+    color: #046307;
+}
+
+#color {
+    color: #00008B;
+}
+
+#mood {
+    color: #FFFF00;
+}
+
+#lucky-number {
+    color: #E75480;
+}
+
+#lucky-time {
+    color: #F70D1A;
+}
+
+.text-right {
+    text-align: right;
+    margin-bottom: -50px;
+}
+
+#logout {
+    background: #fff;
+    color: #f77800;
+    padding: 5px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-top: 0;
+    border: none;
+    box-shadow: none;
+    border: 1px solid #d7d7d7;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #f77800;
+    font-weight: 600;
+}
+
+#contact {
+    color: rgb(29, 155, 240);
+    text-decoration: underline;
+    cursor: pointer;
+}
